@@ -14,7 +14,7 @@ export const TaskCard = ({ title, body, isDone }) => (
         <TaskEditButton
           name="edit"
           size={32}
-          color="tomato"
+          color="#046E8F"
           onPress={isDone => editTaskClicked(isDone)}
         />
       )}
@@ -47,14 +47,14 @@ const Container = styled.View`
   justify-content: flex-start;
   flex-direction: column;
   align-self: center;
-  border: 2px solid tomato;
+  border: 2px solid #046e8f;
   border-radius: 20px;
   min-height: 150px;
   width: 90%;
   margin-bottom: 3%;
   padding: 7px;
   opacity: ${({ isDone }) => (isDone ? "0.4" : "1")};
-  background-color: ${({ isDone }) => (isDone ? "tomato" : "white")};
+  background-color: ${({ isDone }) => (isDone ? "#046E8F" : "white")};
 `;
 
 const DoneIconPlaceholder = styled(IconM)`
@@ -72,7 +72,7 @@ const HeaderContainer = styled.View`
 `;
 
 const TaskTitle = styled.Text`
-  color: tomato;
+  color: #046e8f;
   width: 80%;
   font-size: 30px;
   padding-left: 10px;
@@ -87,7 +87,7 @@ const TaskEditButton = styled(IconF)`
 `;
 
 const TaskTitleLine = styled.View`
-  background-color: tomato;
+  background-color: #046e8f;
   height: 1.5px;
   margin-top: 4px;
   margin-left: 10px;
@@ -101,7 +101,7 @@ const TaskBody = styled.View`
 `;
 
 const TaskBodyText = styled.Text`
-  color: tomato;
+  color: #046e8f;
   width: 100%;
   font-size: 20px;
   padding-left: 10px;

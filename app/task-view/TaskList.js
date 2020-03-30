@@ -15,7 +15,7 @@ export const TaskList = props => {
   };
 
   return (
-    <GradientTop colors={["white", "#FFD0BA"]} start={[0, 0.1]}>
+    <GradientTop colors={["white", "#38AECC"]} start={[0, 0.1]}>
       <Container bounces={true} bouncesZoom>
         {props.tasks.map(taskData => (
           <TaskCardContainer

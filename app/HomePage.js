@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import styled from "styled-components/native";
 import { TaskList } from "./task-view/TaskList";
 import Icon from "react-native-vector-icons/MaterialIcons";
-import { Badge } from "react-native-elements";
 import Moment from "moment";
 import SwipeablePanel from "rn-swipeable-panel";
 
@@ -51,7 +50,7 @@ export default class HomePage extends Component {
     var currentDate = Moment(new Date()).format("DD-MM-YYYY");
     return (
       <Container>
-        <Title> Get things done !</Title>
+        <Title> Habitos COVID</Title>
         <DateBar>
           <DateText onPress={this.openPanel}>{currentDate} </DateText>
           <RightBarContainer>
@@ -97,7 +96,7 @@ const DateBar = styled.View`
 `;
 
 const DateText = styled.Text`
-  color: tomato;
+  color: #022f40;
   font-size: 20px;
 `;
 
@@ -116,17 +115,17 @@ const CounterBadge = styled.Text`
   background-color: white;
   justify-content: center;
   align-self: center;
-  color: tomato;
+  color: #022f40;
   padding: 5px;
   padding-left: 12px;
   padding-right: 8px;
-  border: 1.6px tomato;
+  border: 1.6px #022f40;
   border-radius: 15px;
 `;
 
 const Title = styled.Text`
   font-size: 35px;
-  color: tomato;
+  color: #022f40;
   margin-top: 20px;
 `;
 
@@ -137,26 +136,21 @@ const Title = styled.Text`
 const defaultTasks = [
   {
     id: 1,
-    title: "Workout",
-    body: "I need to do tssssssssssssssssssssssshis to stay in shape",
+    title: "🤲🏻 🧼",
+    body: "Ya te lavaste las manos? 🤔",
     done: false
   },
   {
     id: 2,
-    title: "I need to do very loong stuff",
-    body: "And that will be smalssssssssssssssssssssssssssssssl",
-    done: true
+    title: "📱 🧼",
+    body:
+      "Es momento de desinsfectar tu movil 😀. Y no, no se trata de eliminar el numero de tu ex.",
+    done: false
   },
   {
     id: 3,
-    title: "Workout",
-    body: "I need to do this to stay in shape",
+    title: "🚪 Y 🔑",
+    body: "Puertas y llaves limpias? 🤔",
     done: true
-  },
-  {
-    id: 4,
-    title: "I need to do very loong stuff",
-    body: "And that will be small",
-    done: false
   }
 ];
